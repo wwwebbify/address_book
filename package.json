@@ -4,13 +4,21 @@
   "description": "A simple Node.js take home assessment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./index.js",
+    "test": "jest"
   },
   "author": "ConSou",
   "license": "ISC",
   "dependencies": {
+    "dayjs": "^1.9.1",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
-    "graphql": "^15.3.0"
+    "graphql": "^15.3.0",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@jest/globals": "^26.5.2",
+    "jest": "^26.5.2",
+    "supertest": "^5.0.0"
   }
 }
