@@ -7,7 +7,7 @@ let DB = {
         id        : 1,
         firstName: 'David',
         lastName : 'Sutherland',
-        role      : 'Ambitious Applicant',
+        role      : 'Bit Byter',
         email     : 'david@wwwebbify.com',
         phone     : '2086066928',
         createdAt: '10-06-2020 07:23'

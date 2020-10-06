@@ -30,10 +30,10 @@ mutation addContact(
 
 {
   "addInput": {
-    "firstName": "Conor",
-    "lastName": "Souhrada",
+    "firstName": "David",
+    "lastName": "Sutherland",
     "role": "Web Guru",
-    "email": "conor.souhrada@microbeformulas.com"
+    "email": "test@test.com"
   }
 }
 
