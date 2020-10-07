@@ -14,7 +14,8 @@
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
     "graphql": "^15.3.0",
-    "node-sass-middleware": "^0.11.0"
+    "node-sass-middleware": "^0.11.0",
+    "tabulator-tables": "^4.8.2"
   },
   "devDependencies": {
     "@jest/globals": "^26.5.2",

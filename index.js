@@ -12,7 +12,6 @@ const basePath = '/addressBook'; // Needs to be in .env
 const apiPath = `${basePath}/api`;
 const port = 4000;
 
-app.use(basePath, express.static(`${__dirname}/public`));
 
 app.use(apiPath, graphqlHTTP({
     schema   : schema,
@@ -23,10 +22,14 @@ app.use(apiPath, graphqlHTTP({
 app.use(sassMiddleware({
     src: `${__dirname}/public/css`,
     dest: `${__dirname}/public/css`,
-    debug: true,
+    debug: false,
     outputStyle: 'compressed',
-    prefix:  `${basePath}/css`
+    prefix:  `${basePath}/css`,
 }))
+
+app.use(`${basePath}/tabulator`, express.static(`${__dirname}/node_modules/tabulator-tables/dist`))
+
+app.use(basePath, express.static(`${__dirname}/public`));
 
 //This catchall route must be last
 app.get(`${basePath}/*`, (req,res, next) => {
