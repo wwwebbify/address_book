@@ -7,7 +7,7 @@ const schema = require('./schema.js');
 const root   = require('./root.js');
 
 const app = express();
-const basePath = '/addressBook';
+const basePath = '/addressBook'; // Needs to be in .env
 const apiPath = `${basePath}/api`;
 const port = 4000;
 app.use(apiPath, graphqlHTTP({
@@ -17,4 +17,7 @@ app.use(apiPath, graphqlHTTP({
 }));
 let server = app.listen(port, () => console.log(`http://localhost:${port}${apiPath}`));
 
-module.exports = server;
+module.exports = {
+    server,
+    apiPath
+};

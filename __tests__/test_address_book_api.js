@@ -1,7 +1,7 @@
 const {test}    = require("@jest/globals");
 const supertest = require("supertest");
 
-const server  = require("../index.js");
+const {server, apiPath}  = require("../index.js");
 const request = supertest(server);
 
 afterAll(() => {
@@ -32,7 +32,7 @@ test("API addContact adds and returns newContact info", async (done) => {
     };
 
     request
-        .post("/api")
+        .post(apiPath)
         .send({
             query    : `
 mutation addContact(
@@ -81,7 +81,7 @@ test("API updatesContact updates and returns newContact info", async (done) => {
     };
 
     request
-        .post("/api")
+        .post(apiPath)
         .send({
             query    : `
 mutation updateContact(
@@ -126,7 +126,7 @@ test("API deleteContact deletes contact and returns newContact ContactDeleteResp
     };
 
     request
-        .post("/api")
+        .post(apiPath)
         .send({
             query    : `
 mutation deleteContact(
@@ -165,7 +165,7 @@ Utility Functions
 
 async function testContactsCall(test) {
     return await request
-        .post("/api")
+        .post(apiPath)
         .send({
             query: `
 query{
