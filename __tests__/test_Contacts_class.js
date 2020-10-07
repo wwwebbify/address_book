@@ -1,5 +1,5 @@
 const {test}  = require("@jest/globals");
-const Contact = require('../Contact.js');
+const Contact = require('../modules/Contact.js');
 
 test('Contacts class instantiates correctly', () => {
     let props = {

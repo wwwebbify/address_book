@@ -1,5 +1,5 @@
 const dayjs   = require('dayjs');
-const Contact = require('./Contact.js');
+const Contact = require('../modules/Contact.js');
 
 //build with some mock data
 let DB = {

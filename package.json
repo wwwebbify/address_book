@@ -4,7 +4,7 @@
   "description": "A simple Node.js, express, graphQL address book with API",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node index.js",
     "test": "jest"
   },
   "author": "BitByter",
@@ -13,7 +13,8 @@
     "dayjs": "^1.9.1",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
-    "graphql": "^15.3.0"
+    "graphql": "^15.3.0",
+    "node-sass-middleware": "^0.11.0"
   },
   "devDependencies": {
     "@jest/globals": "^26.5.2",
