@@ -1,6 +1,8 @@
 This is a fun little address book project.
 
-Run the following commands to get up and running:
+You will need NodeJs installed. 
+
+Within this directory, Run the following commands to get up and running:
  * `npm install`
  * `npm run test` (optional, executes jest tests)
  * `npm run start` to start the graphQL API.
