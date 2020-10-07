@@ -7,7 +7,8 @@ const schema = require('./schema.js');
 const root   = require('./root.js');
 
 const app = express();
-const apiPath = '/api';
+const basePath = '/addressBook';
+const apiPath = `${basePath}/api`;
 const port = 4000;
 app.use(apiPath, graphqlHTTP({
     schema   : schema,
